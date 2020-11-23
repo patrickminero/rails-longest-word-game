@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Results</h1>
+  <h2>
+  <% params[:word].split('').each do |letter| %>
+    <span><%= letter.upcase %></span>
+  <% end %>
+  </h2>
+  <p><%= @letters %></p>
+  <p><%= @includes %></p>
+  <p><%= @valid %></p>
+  <%= link_to "Play again", new_path %>
+</div>
